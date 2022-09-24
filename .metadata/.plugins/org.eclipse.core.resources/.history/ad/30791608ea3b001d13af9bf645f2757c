@@ -1,0 +1,26 @@
+package sesliHarfler;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		char harf;
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Sesli bir harf giriniz.");
+		harf = scan.next().charAt(0);
+		
+		if(harf == 'a' || harf =='ı' || harf =='u' || harf =='o') {
+			System.out.println(harf + " kalın seslidir.");
+		}
+		
+		else if(harf == 'e' || harf =='i' || harf =='ü' || harf =='ö') {
+			System.out.println(harf + " ince seslidir");
+		}
+		else {
+			System.out.println(harf + " sesli harf değildir.");
+		}
+	}
+
+}

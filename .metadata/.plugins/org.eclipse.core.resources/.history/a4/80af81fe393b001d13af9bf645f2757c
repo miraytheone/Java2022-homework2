@@ -1,0 +1,23 @@
+package miniProjeAsalSayi;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int myList[] = {3,5,7,9,11,15,16,23};
+		int remainder;
+		for( int number:myList) {
+			
+			for(int i=2; i<number;i++) {
+				remainder = number % 2 ;
+				if(remainder == 0) {
+					System.out.println("Sayı asal değildir.");
+				}
+				else {
+					System.out.println("Sayı asaldır.");
+				}
+			}
+		}
+ 
+	}
+
+}
